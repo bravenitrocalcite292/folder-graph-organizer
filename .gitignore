@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Build artifacts (keep main.js — it's the plugin output)
+*.map
+
+# TypeScript source (optional — add main.ts if you want source tracked)
+# main.ts
+
+# OS files
+.DS_Store
+Thumbs.db
